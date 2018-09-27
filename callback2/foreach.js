@@ -1,13 +1,20 @@
 // The second argument/parameter is expected to be a function
 function findWaldo(findWaldoArray, found) {
-  findWaldoArray.forEach(function(element,i) {
+  findWaldoArray.forEach(function(element,indexOfelement) {
     if (element === "Waldo"){
-      found(i);   // execute callback
+      found(indexOfelement);   // execute callback
     }
   }) // visual reminder there was a callback - termina
   //funcao e os parametros
 }
-
+//element eh o parametro. a funcao tem que receber um argumento que
+//faca sentido. ela esta recebendo uma array, quando o metodo forEach
+//for passar pelo array, a funcao vai entender que o element no caso
+//ser um string.
+//como a funcao tb recebe um segundo elemento, na documentacao do metodo
+//forEach ta explicado que esse segundo elemento pode ser um index ou tb
+//um array. No caso eh o index do elemento, mas nao pq esta escrito
+//indexOfelement, mas pq esse eh um parametro que o metdo aceita
 function actionWhenFound(findPosition) {
   console.log("Found Waldo at index "+ findPosition +"!");
 }
