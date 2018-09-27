@@ -4,7 +4,7 @@ var listOftriangles = [
   { x: 8, y: 15 }
 ];
 var result = listOftriangles.map(function (triangle){
-  return Math.sqrt(triangle.x*triangle.x + triangle.y*triangle.y)
+  return Math.sqrt(triangle.x*triangle.x + triangle.y* otriangle.y)
 });
 //result esta armazenando a array gerada pelo metodo map contendo os
 //resutlados da expressao passada pela funcao
